@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Register - eSports1</title>
+
+  <!-- css style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- inplayer script -->
+<script type='text/javascript' src='https://assets.inplayer.com/paywall/latest/paywall.min.js'></script>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- hamburger menu animation -->
+  <link href="js/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+
+  <!-- animate css -->
+    <link href="css/animate.css-master/animate.css" rel="stylesheet">
+
+    <style media="screen">
+    html{
+      visibility: hidden;
+    }
+    .inplayer-paywall header .headline *:nth-child(1){
+      display: none;
+    }
+    </style>
+</head>
+<body>
+  <div id="nav-wrapper" style="position: relative">
+    <div class="nav-container">
+      <a href="home.html" class="nav-logo page-scroll">
+      <img src="img/logo.png" alt="logo eSports1"  class="logo">
+      </a>
+      <ul id="menu" class="animated slideOutUp">
+        <!-- <li> <a href="#watch" class="page-scroll">Anschauen</a> </li> -->
+        <li> <a href="https://www.sport1.de/unternehmen/esportsapp" target="_blank">Datenschutz</a> </li>
+        <li> <a href="https://www.sport1.de/unternehmen/impressum/" target="_blank">Impressum</a> </li>
+        <li> <a href="hilfe.html" class="page-scroll">Hilfe</a> </li>
+        <li> <a href="#footer" class="page-scroll">Kontakt</a> </li>
+      </ul>
+    </div>
+    <button class="hamburger hamburger--squeeze" type="button" id="toggle">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+  <!-- nav end -->
+
+  <div id="idWidget" onSuccess="function(){alert('Success!');}"></div>
+  <script src="js/verify.js"></script>
+
+  <div class="app-container ">
+    <div class="app-wrap">
+      <h2>JETZT APP DOWNLOADEN </h2>
+          <div class="icons">
+            <a href="https://apps.apple.com/de/app/esports1-die-esports-app/id1104893761" target="_blank"> <img src="img/app-icon-ios.png" alt="logo appstore ios"> </a>
+            <a href="https://play.google.com/store/apps/details?id=de.sport1.esport&hl=de" target="_blank"><img src="img/app-icon-android.png" alt="logo google play android"> </a>
+          </div>
+
+        <p style="font-size: 12px;">*Das Abonnement gilt ab dem Kaufdatum für einen Monat. Es verlängert sich automatisch, wenn es nicht vor Ablauf des Abonnements gekündigt wird.</p>
+      </div>
+  </div>
+
+  <!-- back to top button -->
+  <a href="#page-top" class="back-to-top" style="">
+    <i class="fa fa-chevron-circle-up"></i>
+  </a>
+
+
+  <!-- footer -->
+      <div id="footer">
+        <div class="f-left">
+          <h2>Du brauchst hilfe?</h2>
+          <!-- <span class="divider"></span> -->
+          <div class="">
+            <p class="subInfo">Es gibt Probleme mit der Registrierung? <br> Dann wende dich gerne per Mail an unser Support-Team unter <a class="link" style="color: #fff" href="mailto:support@inplayer.com">support@inplayer.com</a> .</p>
+          </div>
+        </div>
+        <div class="f-right-container">
+        <div class="f-right">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/SPORT1eSPORTS/" target="_blank" >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/sport1esports/" target="_blank" >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCp2-Qi_NsDijgosMAllRkaA" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://twitter.com/sport1esports?lang=de" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <a href="https://inplayer.com/" target="_blank"><p style="color: #fff;" id="ip">POWERED BY INPLAYER</p></a>
+        </div>
+      </div>
+      </div>
+      <!-- footer end -->
+<div class="inplayer-paywall" id="inplayer-71615"></div>
+
+</body>
+</html>
+
+  <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script type="text/javascript" src="js/creative.js"></script>
+
+<script>
+
+var paywall = new InplayerPaywall('62193f14-6fec-45c4-879f-e0fcf0dac676', [{id: 71615, options: {noPreview: true}}]);
+
+paywall.setLanguage('de');
+
+paywall.on('access', function(type, data){
+    if(data.hasAccess == true){
+      window.location.replace("home.html");
+    }
+  });
+
+
+$(document).ready(function(){
+  if(paywall.isAuthenticated() == false){
+      $('html').css('visibility', 'visible');
+  }
+});
+
+  function s1VerifyCallback() {
+    console.log("verify callback")
+  }
+
+</script>

@@ -1,0 +1,77 @@
+:root{
+  --primary: #f6a800;
+  --lighter: #f8bb38;
+  --dark: #3d464c;
+
+  --condensed-black: "Sport1 Condensed Black", sans-serif;
+  --condensed-bold: "Sport1 Condensed Bold", sans-serif;
+  --condensed-regular: "Sport1 Condensed Regular", sans-serif;
+  --bold: "Sport1 Bold", sans-serif;
+  --regular: "Sport1 Regular", sans-serif;
+  --light: "Sport1 Light", sans-serif;
+
+}
+
+
+@font-face {
+	font-family: 'Sport1 Condensed Black';
+  font-weight: 900;
+	src:
+    url('../fonts/condensed/sport1-condensedblack.woff') format('woff'),
+		url('../fonts/condensed/sport1-condensedblack.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sport1 Condensed Bold';
+  font-weight: 800;
+	src:
+    url('../fonts/condensed/sport1-condensedbold.woff') format('woff'),
+		url('../fonts/condensed/sport1-condensedbold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sport1 Condensed Regular';
+  font-weight: 400;
+	src:
+    url('../fonts/condensed/sport1-condensedregular.woff') format('woff'),
+    url('../fonts/condensed/sport1-condensedregular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Sport1 Bold';
+  font-weight: 700;
+  src:
+    url('../fonts/regular/sport1-bold.woff') format('woff'),
+    url('../fonts/regular/sport1-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sport1 Regular';
+  font-weight: 400;
+  src:
+    url('../fonts/regular/sport1-regular.woff') format('woff'),
+    url('../fonts/regular/sport1-regular.ttf') format('truetype'),;
+}
+
+@font-face {
+  font-family: 'Sport1 Light';
+  font-weight: 200;
+  src:
+    url('../fonts/regular/sport1-light.woff') format('woff'),
+    url('../fonts/regular/sport1-light.ttf') format('truetype');
+}
+
+
+@mixin img($width) {
+  width: 100%;
+  max-width: $width;
+  margin: 0 auto;
+}
+
+@mixin transition {
+  -ms-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}

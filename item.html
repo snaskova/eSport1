@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Live Sport im Internet | eSports1">
+    <meta name="author" content="">
+    <link rel="icon" href="img/fav.png">
+    <title>eSports1 | Live Sport im Internet</title>
+
+    <!-- og tags -->
+    <meta property="og:url"           content="" />
+    <meta property="og:title"         content="Live Sport im Internet | eSports1" />
+    <meta property="og:description"   content="Live Sport im Internet | eSports1" />
+    <meta property="og:image"         content="" />
+
+    <!-- twitter tags -->
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="Live Sport im Internet | eSports1">
+    <meta property="twitter:image" content="Live Sport im Internet | eSports1">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- hamburger menu animation -->
+    <link href="js/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+
+    <!-- animate css -->
+      <link href="css/animate.css-master/animate.css" rel="stylesheet">
+
+
+    <!-- inplayer script -->
+  <script type='text/javascript' src='https://assets.inplayer.com/paywall/latest/paywall.min.js'></script>
+
+
+    <!-- scroll reveal -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+
+    <style media="screen">
+    </style>
+
+    <script>
+    function getParameterByName(name, url)
+    {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    var config = {
+        item_id: getParameterByName('id'),
+        merchant_uuid: "62193f14-6fec-45c4-879f-e0fcf0dac676",
+        service_url: "https://services.inplayer.com"
+    }
+
+
+    </script>
+
+  </head>
+  <body>
+
+
+    <div id="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo page-scroll">
+        <img src="img/logo.png" alt="logo eSports1"  class="logo">
+        </a>
+        <ul id="menu" class="animated slideOutUp">
+          <li> <a href="index.html" class="page-scroll">Startseite</a> </li>
+          <li> <a href="https://www.sport1.de/unternehmen/esportsapp" target="_blank">Datenschutz</a> </li>
+          <li> <a href="https://www.sport1.de/unternehmen/impressum/" target="_blank">Impressum</a> </li>
+          <li> <a href="#faq" class="page-scroll">FAQ</a> </li>
+          <li> <a href="#footer" class="page-scroll">Kontakt</a> </li>
+          <button  class="login-button button inplayer-paywall-login ">Anmelden</button>
+          <button  class="login-button button inplayer-paywall-logout ">Ausloggen</button>
+        </ul>
+      </div>
+      <button class="hamburger hamburger--squeeze" type="button" id="toggle">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <!-- nav end -->
+
+
+    <div id="header"  class="item-header">
+      <div class="header-content">
+        <div id="preview-item" class="asset"></div>
+      </div>
+    </div>
+
+
+    <div class="package-container">
+      <h2 class="container-title">Ähnliche Videos</h2>
+      <div class="package" id="packages">
+        <div class="package-items">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- cookie popup -->
+      <div class="cookie-popup">
+        <div class="">
+          <!-- <h3>Cookies </h3> <br> -->
+          <p>Wir verwenden Cookies und ähnliche Technologien, um dir unseren
+    uneingeschränkten Service sowie personalisierte Anzeigen anzubieten.
+    Weitere Informationen und Widerspruchsmöglichkeiten findest du <a id="mobile-link" href="https://www.sport1.de/unternehmen/esportsapp" class="link">hier.</a></p>
+        </div>
+        <button type="button" class="button" id="cookie-accept">ok</button>
+      </div>
+
+      <div class="app-container">
+        <div class="app-wrap">
+          <h2>Hochklassige internationale und nationale eSports-Events
+            im Livestream auf Deinem Smartphone oder Tablet.</h2>
+            <div class="wrap">
+              <div class="icons">
+                <p >eSPORTS1 für nur <b>5,99 Euro pro Monat*</b> auf der eSPORTS1 App buchbar.</p>
+                <a href="https://apps.apple.com/de/app/esports1-die-esports-app/id1104893761" target="_blank"> <img src="img/app-icon-ios.png" alt="logo appstore ios"> </a>
+                <a href="https://play.google.com/store/apps/details?id=de.sport1.esport&hl=de" target="_blank"><img src="img/app-icon-android.png" alt="logo google play android"> </a>
+              </div>
+              <img id="tablet" src="img/paket_plattformen_esports1.png" alt="tablet iphone esports">
+            </div>
+            <p style="font-size: 12px;">*Das Abonnement gilt ab dem Kaufdatum für einen Monat. Es verlängert sich automatisch, wenn es nicht vor Ablauf des Abonnements gekündigt wird.</p>
+          </div>
+      </div>
+
+    <!-- back to top button -->
+    <a href="#page-top" class="back-to-top" style="">
+      <i class="fa fa-chevron-circle-up"></i>
+    </a>
+
+    <!-- FAQ -->
+  <div id="faq" class="section">
+    <div class="faq-header">
+      <h2 class="">Brauchen Sie Hilfe?</h2>
+    </div>
+
+    <div class="faq-info">
+      <!-- fist column -->
+      <ul class="accordion">
+        <h3>Informationen zur Veranstaltung</h3>
+        <!-- second question -->
+        <li>
+          <a href="#" class="toggle">Kann ich die Live-Veranstaltung von meinem Standort sehen?</a>
+          <div class="inner">
+            <p>Ja. Die Live-Veranstaltung ist weltweit verfügbar.</p>
+          </div>
+        </li>
+
+        <!-- third question -->
+        <li>
+          <a href="#" class="toggle">Wird es eine Videowiedergabe geben und wie schaue ich mir das an?</a>
+          <div class="inner">
+            <p>Ja. Die Videowiedergabe/n sind im Kauf des Live-Events enthalten.</p>
+          </div>
+        </li>
+
+
+      <!-- fourth question -->
+      <li>
+        <a href="#" class="toggle">Gibt es irgendwelche zusätzliche Gebühren, die Videowiedergaben zu sehen?</a>
+        <div class="inner">
+          <p>Nein, es gibt keine zusätzlichen Gebühren.</p>
+        </div>
+      </li>
+
+
+    <!-- fifth question -->
+    <li>
+      <a href="#" class="toggle">Wie lange werden die Videowiedergaben  verfügbar sein?</a>
+      <div class="inner">
+        <p>Die Videowiedergaben werden bis zum 1. Mai 2019 verfügbar sein.</p>
+      </div>
+    </li>
+
+  </ul>
+
+      <ul class="accordion">
+        <h3>Anmeldung und Zahlung</h3>
+
+        <!-- first question -->
+        <li>
+          <a href="#" class="toggle">Wie kann ich ein Konto erstellen?</a>
+          <div class="inner ">
+            <p><strong>Schritt 1.</strong> Klicken Sie auf das Bild des Inhalts, den Sie ansehen möchten, oder klicken Sie auf die Schaltfläche <strong>Kaufen</strong>, um Ihren digitalen Pass zu kaufen.</p>
+            <p><strong>Schritt 2.</strong> Wählen Sie die<strong>Registrieren</strong>-Option oben im Formular.</p>
+            <p><strong>Schritt 3.</strong> Füllen Sie das Formular mit Ihrem vollständigen Namen, Ihrer E-Mail-Adresse und Ihrem Passwort aus und klicken Sie auf die Schaltfläche <strong>Registrieren.</strong></p>
+            <p>Sie erhalten eine E-Mail-Bestätigung für ein erfolgreich erstelltes Konto. Um herauszufinden, wie Sie einen Kauf tätigen können, fahren Sie mit dem nächsten Abschnitt fort.</p>
+          </div>
+        </li>
+
+        <!-- second question -->
+        <li>
+          <a href="#" class="toggle">Wie kann ich einkaufen?</a>
+          <div class="inner">
+            <p><strong>Schritt 1.</strong> Klicken Sie auf die  <strong>Kaufen</strong>-Taste für den Inhalt, den Sie ansehen möchten, und warten Sie, bis das Anmeldeformular angezeigt wird. Loggen Sie sich mit Ihren Zugangsdaten (E-Mail und Passwort) ein.</p>
+            <p><strong>Schritt 2.</strong> Wählen Sie die gewünschte Preisoption aus dem Dropdown-Menü.</p>
+            <p><strong>Schritt 3.</strong> Geben Sie die erforderlichen Informationen ein.</p>
+            <p><strong>Schritt 4.</strong> Drücken Sie die <strong>Bezahlen</strong>-Taste.</p>
+            <p>Sie erhalten umgehend Zugang und eine E-Mail zur Bestätigung Ihres Kaufs. Sollte die Seite nicht geladen werden, bitte aktualisieren Sie die Website.</p>
+          </div>
+        </li>
+
+        <!-- third question -->
+        <li>
+          <a href="#" class="toggle">Wie kann ich mich einloggen und ansehen?</a>
+          <div class="inner">
+            <p><strong>Schritt 1.</strong> Klicken Sie auf die Schaltfläche <strong>Anmelden</strong>in der oberen rechten Ecke oder auf die <strong>Kaufen</strong>-Taste für den Inhalt, den Sie ansehen möchten.</p>
+            <p><strong>Schritt 2.</strong> Geben Sie im angezeigten Formular Ihre Anmeldedaten (E-Mail und Passwort) ein.</p>
+            <p><strong>Schritt 3.</strong> Klicken Sie auf <strong>Anmelden.</strong></p>
+            <p>Die Seite wird dann aktualisiert und wenn Sie bereits gekauft haben, verschwindet die Paywall. Wenn Sie noch nicht gekauft haben, befolgen Sie bitte die oben genannten Richtlinien unter <strong>Wie kaufe ich ein?</strong></p>
+          </div>
+        </li>
+
+        <!-- fourth question -->
+        <li>
+          <a href="#" class="toggle">Wie kann ich mein Passwort zurücksetzen?</a>
+          <div class="inner">
+            <p><strong>Schritt 1.</strong> Navigieren Sie zum Anmeldeformular, indem Sie auf die <strong>Kaufen</strong>-Taste oder auf die Schaltfläche <strong>Anmelden</strong>-Taste in der oberen rechten Ecke klicken.</p>
+            <p><strong>Schritt 2.</strong>  Klicken Sie auf die Schaltfläche <strong>Passwort vergessen</strong> unter dem Passwortfeld im Anmeldebildschirm.</p>
+            <p><strong>Schritt 3.</strong> Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf <strong>Senden.</strong></p>
+            <p><strong>Schritt 4.</strong>  Lassen Sie das Browser-Fenstern mit dem Formular geöffnet. Suchen Sie in Ihrer E-Mail nach einem <strong>Token</strong>, mit dem Sie Ihr Passwort aktualisieren können.</p>
+            <p><strong>Schritt 5.</strong> Kopieren Sie das Token, fügen Sie es zusammen mit Ihrem neuen Passwort ein und klicken Sie auf die Schaltfläche <strong>Senden.</strong></p>
+            <p>Ihr Passwort wird aktualisiert. Bitte melden Sie sich mit Ihrer E-Mail-Adresse und Ihrem neuen Passwort an.</p>
+            <p>Wenn Sie keinen Token zum Zurücksetzen des Passworts erhalten, wenden Sie sich an <a  href="mailto:support@inplayer.com">support@inplayer.com.</a></p>
+          </div>
+        </li>
+
+        <!-- fifth question -->
+        <li>
+          <a href="#" class="toggle">Kann ich auf mehreren Geräten mit meinem Konto sehen?</a>
+          <div class="inner">
+            <p>Ja, dass können Sie machen.</p>
+          </div>
+        </li>
+
+      </ul>
+
+
+    <!-- third column -->
+
+      <ul class="accordion">
+        <h3>Sonstiges</h3>
+
+        <!-- first question -->
+        <li>
+          <a href="#" class="toggle">Ist die Zahlung auf Ihrer Website sicher?</a>
+          <div class="inner">
+            <p>Natürlich! Alle sensiblen Daten, die wir verarbeiten, werden per SSL gesendet.</p>
+            <p>Dies wird nicht als websiteweite Verwendung von HTTPS angegeben, da dies nicht der Fall ist. Nur die Anrufe, die über HTTPS getätigt werden müssen, wie private Benutzerdaten oder Zahlungsinformationen, sind mit SSL geschützt.</p>
+            <p>Die Sicherheit der Website kann mit jedem Tool zur Website-Überprüfung überprüft werden.</p>
+          </div>
+        </li>
+
+        <!-- second question -->
+        <li>
+          <a href="#" class="toggle">Warum wurde meine Kreditkarte abgelehnt?</a>
+          <div class="inner">
+            <p>Kredit- oder Debitkarte kann in folgenden Fällen abgelehnt werden:</p>
+            <p>1. Nicht genug Geld.</p>
+            <p>2. Das Betrugskontrollsystem hat den Benutzer als verdächtig markiert.</p>
+            <p>Bitte wenden Sie sich an Ihre Bank.</p>
+            <p>Für weitere Fragen oder Unterstützung kontaktieren Sie uns bitte unter  <a id="emailAddress"  href="mailto:support@inplayer.com">support@inplayer.com.</a></p>
+          </div>
+        </li>
+
+
+        <!-- third question -->
+        <li>
+          <a href="#" class="toggle">Was ist eine CVV-Nummer und wie finde ich sie?</a>
+          <div class="inner">
+            <p>Die CVV-Nummer (“Card Verification Value”) ist die dreistellige Nummer auf der Rückseite Ihrer Kredit- und Debitkarten der Marken VISA® und MasterCard®. Auf Ihrer Kreditkarten- oder Debitkarte der Marke American Express® befindet sich ein vierstelliger numerischer Code.</p>
+          </div>
+        </li>
+
+
+        <!-- fourth question -->
+        <li>
+          <a href="#" class="toggle">Wo finde ich Ihre Allgemeinen Geschäftsbedingungen?</a>
+          <div class="inner">
+            <p>Die Nutzungsbedingungen von InPlayer finden Sie unter folgendem Link:</p>
+            <p> <a class="link" href="http://inplayer.com/terms/" target="_blank">http://inplayer.com/terms/ </a> </p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div> <!-- faq-info -->
+  </div>    <!-- faq -->
+
+
+
+  <!-- footer -->
+      <div id="footer">
+        <div class="f-left">
+          <h2>Nehmen Sie Kontakt mit uns auf</h2>
+          <!-- <span class="divider"></span> -->
+          <div class="">
+            <p>Haben Sie immer noch Probleme beim Anschauen des Streams oder beim Kauf Ihres Tickets?</p>
+            <p>Zögern Sie nicht, unser Support-Team unter <a class="link" href="mailto:support@inplayer.com">support@inplayer.com</a> zu kontaktieren.</p>
+          </div>
+        </div>
+        <div class="f-right-container">
+        <div class="f-right">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/SPORT1eSPORTS/" target="_blank" >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/sport1esports/" target="_blank" >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCp2-Qi_NsDijgosMAllRkaA" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://twitter.com/sport1esports?lang=de" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <a href="https://inplayer.com/" target="_blank"><p id="ip">ANGETRIEBEN DURCH INPLAYER</p></a>
+        </div>
+      </div>
+      </div>
+      <!-- footer end -->
+
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/creative.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+
+
+
+    function createItemElement(id, metadata)
+    {
+        var item = {};
+        for(var j=0; j<metadata.length; j++)
+        {
+            item[metadata[j].name] = metadata[j].value;
+        }
+
+        var is_active = getParameterByName('id')==id ? ' active' : '';
+
+        var output = '<div class="package-item'+is_active+'"><i class="far fa-play-circle"></i><div class="content" style="background-image:url('+item.paywall_cover_photo+')">';
+        output += '<a href="./item.html?id='+id+'&pid='+getParameterByName('pid')+'" class="overlay-link"></a></div><div class="item-label"><div class="inner">';
+        output += item.preview_title;
+        output += '</div>';
+        output += '</div></div>';
+        return output;
+    }
+
+
+    $.get(config.service_url + '/items/packages/' + getParameterByName('pid') + '/items', function(response){
+        var output = '';
+        for(var i=0; i<response.collection.length; i++)
+        {
+            var item = response.collection[i];
+            var current_item = getParameterByName('id');
+            if(item.id != current_item){
+              output += createItemElement(item.id, item.metadata);
+            }
+
+        }
+        $('.package-items').html(output);
+    });
+
+
+        $('#preview-item').html('<div id="inplayer-'+getParameterByName('id')+'" class="inplayer-paywall""></div>');
+
+
+        var paywall = new InplayerPaywall('62193f14-6fec-45c4-879f-e0fcf0dac676',[{ id: getParameterByName('id')
+        }]);
+
+         paywall.setLanguage('de');
+
+        $('.inplayer-paywall-logout').hide();
+
+         paywall.on('authenticated', function(){
+           $('.inplayer-paywall-login').hide();
+            $('.inplayer-paywall-logout').show();
+         });
+
+         paywall.on('inject', function(){
+         $(".inplayer-paywall").addClass('responsive-iframe');
+       })
+
+         paywall.on('logout', function(){
+           location.reload();
+         });
+
+    </script>
+  </body>
+</html>

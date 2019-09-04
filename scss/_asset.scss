@@ -1,0 +1,124 @@
+.asset{
+  text-align: center;
+
+    .inplayer-preview-box{
+      max-width: 700px;
+      padding: 0;
+      // background: none;
+      border: none;
+      border-radius: 0;
+
+      .inplayer-imageholder{
+        .inplayer-paywallexplain{
+          display: none;
+        }
+      }
+
+      .inplayer-itemdetails{
+    //     padding-left: 20px;
+    //     box-sizing: border-box;
+    //     position: absolute;
+    //     // color: #fff;
+    //     // top: calc(50% - 60px);
+    //     left: 0;
+    //     bottom: 0;
+    //     padding: 15px 20px;
+    // width: 100%;
+    // background: rgba(0, 0, 0, 0.54);
+
+        // transform: translate(-50%, -50%);
+        // width: 54%;
+
+        h3{
+          font-family: var(--condensed-bold);
+          font-weight: 500;
+          text-align: left;
+
+          font-size: 1.5em;
+          // margin: 0;
+        }
+
+        p{
+          // display: none;
+          font-family: var(--condensed-regular);
+          text-align: left;
+          font-weight: 400;
+        }
+      } // itemdetails
+
+      .inplayer-buybutton{
+        // width: 100%;
+        // position: absolute;
+        // right: 0;
+        // bottom: 0;
+
+        button{
+          margin: 0;
+
+          @extend .assetBtn;
+
+          &:hover{
+
+            transform: none !important;
+          }
+        }
+      }
+
+      .inplayer-preview-footer{
+        margin-top: 0;
+        display: none;
+      }
+    } // inplayer preview box
+
+
+
+    @media screen and (max-width:700px){
+     .inplayer-preview-box{
+       background: #fff;
+       border: 1px solid #e9edef;
+
+       .inplayer-itemdetails{
+         transform: initial;
+        position: initial;
+        color: #222;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 4%;
+
+         .inplayer-title{
+           color: #222;
+         }
+       }
+
+       .inplayer-buybutton{
+         position: initial;
+          width: 100%;
+          max-width: 200px;
+          padding: 0 4%;
+          display: block;
+          margin: 5px auto;
+        }
+     }
+    }
+
+    @media (max-width: 900px){
+      .responsive-iframe{
+        // display: block;
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+
+        iframe{
+          position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           // border: 0;
+        }
+      }
+
+    }
+
+
+} // asset

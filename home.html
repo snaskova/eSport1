@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Live Sport im Internet | eSports1">
+    <meta name="author" content="">
+    <link rel="icon" href="img/fav.png">
+    <title>eSports1 | Live Sport im Internet</title>
+
+    <!-- og tags -->
+    <meta property="og:url"           content="" />
+    <meta property="og:title"         content="" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="" />
+
+    <!-- twitter tags -->
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- hamburger menu animation -->
+    <link href="js/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+
+    <!-- animate css -->
+      <link href="css/animate.css-master/animate.css" rel="stylesheet">
+
+
+    <!-- inplayer script -->
+  <script type='text/javascript' src='https://assets.inplayer.com/paywall/latest/paywall.min.js'></script>
+
+
+    <!-- scroll reveal -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+    <style media="screen">
+    html{
+      visibility: hidden;
+    }
+    </style>
+
+    <script>
+    function getParameterByName(name, url)
+    {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var config = {
+        packages: [
+          "71613",
+          "71612"
+        ],
+        merchant_uuid: "62193f14-6fec-45c4-879f-e0fcf0dac676",
+        service_url: "https://services.inplayer.com"
+    }
+    </script>
+  </head>
+  <body>
+
+    <div id="nav-wrapper">
+      <div class="nav-container">
+        <a href="#nav-wrapper" class="nav-logo page-scroll">
+        <img src="img/logo.png" alt="logo eSports1"  class="logo">
+        </a>
+        <ul id="menu" class="animated slideOutUp">
+          <!-- <li> <a href="#watch" class="page-scroll">Anschauen</a> </li> -->
+          <li> <a href="https://www.sport1.de/unternehmen/esportsapp" target="_blank">Datenschutz</a> </li>
+          <li> <a href="https://www.sport1.de/unternehmen/impressum/" target="_blank">Impressum</a> </li>
+          <li> <a href="hilfe.html" class="page-scroll">Hilfe</a> </li>
+          <li> <a href="#footer" class="page-scroll">Kontakt</a> </li>
+          <!-- <button  class="login-button button inplayer-paywall-login ">Anmelden</button> -->
+          <button  class="login-button button inplayer-paywall-logout ml-a ">Ausloggen</button>
+        </ul>
+      </div>
+      <button class="hamburger hamburger--squeeze" type="button" id="toggle">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <!-- nav end -->
+
+        <!-- back to top button -->
+        <a href="#page-top" class="back-to-top" style="">
+          <i class="fa fa-chevron-circle-up"></i>
+        </a>
+
+
+    <div id="header">
+        <div class="header-content">
+          <div class="text">
+            <h1>JETZT DOWNLOADEN</h1>
+            <p>Lade dir jetzt die eSPORTS1 App herunter, um unsere Inhalte im vollen Umfang nutzen zu können. Erlebe eSports in seiner ganzen Vielfalt, entweder 24/7 im Livestream oder als Video on Demand in unserer Mediathek. </p>
+            <div class="icons">
+              <a href="https://apps.apple.com/de/app/esports1-die-esports-app/id1104893761" target="_blank"> <img src="img/app-icon-ios.png" alt="logo appstore ios"> </a>
+              <a href="https://play.google.com/store/apps/details?id=de.sport1.esport&hl=de" target="_blank"><img src="img/app-icon-android.png" alt="logo google play android"> </a>
+            </div>
+            <button class="button primaryBtn page-scroll" href="#watch">ZUM APP STORE</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="package-container" id="watch">
+      <h2 class="container-title">Neueste Videos</h2>
+
+      <p>videos go here</p>
+
+    </div>
+
+    <div class="app-container section">
+      <div class="app-wrap">
+        <h2>JETZT APP DOWNLOADEN </h2>
+            <div class="icons">
+              <a href="https://apps.apple.com/de/app/esports1-die-esports-app/id1104893761" target="_blank"> <img src="img/app-icon-ios.png" alt="logo appstore ios"> </a>
+              <a href="https://play.google.com/store/apps/details?id=de.sport1.esport&hl=de" target="_blank"><img src="img/app-icon-android.png" alt="logo google play android"> </a>
+            </div>
+
+          <p style="font-size: 12px;">*Das Abonnement gilt ab dem Kaufdatum für einen Monat. Es verlängert sich automatisch, wenn es nicht vor Ablauf des Abonnements gekündigt wird.</p>
+        </div>
+    </div>
+
+
+<!-- cookie popup -->
+  <div class="cookie-popup ">
+    <div class="">
+      <!-- <h3>Cookies </h3> <br> -->
+      <p>Wir verwenden Cookies und ähnliche Technologien, um dir unseren
+uneingeschränkten Service sowie personalisierte Anzeigen anzubieten.
+Weitere Informationen und Widerspruchsmöglichkeiten findest du <a id="mobile-link" href="https://www.sport1.de/unternehmen/esportsapp" class="link">hier.</a></p>
+    </div>
+    <button type="button" class="button" id="cookie-accept">ok</button>
+  </div>
+
+
+  <!-- footer -->
+      <div id="footer">
+        <div class="f-left">
+          <h2>Du brauchst hilfe?</h2>
+          <!-- <span class="divider"></span> -->
+          <div class="">
+            <p>Es gibt Probleme mit der Registrierung? <br> Dann wende dich gerne per Mail an unser Support-Team unter <a class="link" href="mailto:support@inplayer.com">support@inplayer.com</a> .</p>
+          </div>
+        </div>
+        <div class="f-right-container">
+        <div class="f-right">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/SPORT1eSPORTS/" target="_blank" >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/sport1esports/" target="_blank" >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCp2-Qi_NsDijgosMAllRkaA" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://twitter.com/sport1esports?lang=de" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <a href="https://inplayer.com/" target="_blank"><p id="ip">POWERED BY INPLAYER</p></a>
+        </div>
+      </div>
+      </div>
+      <!-- footer end -->
+
+<div class="inplayer-paywall" id="inplayer-71614"></div>
+
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/creative.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+
+    var paywall = new InplayerPaywall('62193f14-6fec-45c4-879f-e0fcf0dac676', [{id: 71614, options: {noPreview: true}}]);
+
+    paywall.setLanguage('de');
+
+    $(document).ready(function(){
+        if(paywall.isAuthenticated() == false){
+          window.location.replace("index.html");
+        } else{
+          $('html').css('visibility', 'visible');
+        }
+
+        paywall.showPaywall({
+          asset: {
+            assetId: 71615
+          }
+        });
+      });
+
+    $('.inplayer-paywall-logout').hide();
+
+     paywall.on('authenticated', function(){
+       $('.inplayer-paywall-login').hide();
+        $('.inplayer-paywall-logout').show();
+     });
+
+       paywall.on('logout', function(){
+         location.reload();
+       });
+
+
+       function createItemElement(id, metadata, pid)
+        {
+          var item = {};
+          for(var j=0; j<metadata.length; j++)
+          {
+              item[metadata[j].name] = metadata[j].value;
+          }
+
+          var is_active = getParameterByName('id')==id ? ' active' : '';
+          var output = '<div class="package-item'+is_active+'"><div class="content" style="background-image:url('+item.paywall_cover_photo+')"><a href="./item.html?id='+id+'&pid='+pid+'"><i class="far fa-play-circle"></i></a>';
+          output += '<a href="./item.html?id='+id+'&pid='+pid+'" class="overlay-link"></a></div><div class="item-label"><div class="inner">';
+          output += item.preview_title;
+          output += '</div>';
+          output += '</div></div>';
+          return output;
+        }
+
+        function getPackageItems(j){
+         var packageId = config.packages[j];
+         if(packageId === undefined){
+           return;
+         }
+         $.get(config.service_url + '/items/packages/' + packageId + '/items?limit=100', function(response){
+           var output = '';
+           for(var i=0; i<response.collection.length; i++)
+           {
+             var item = response.collection[i];
+             // if(item.id != 46985){
+             output += createItemElement(item.id, item.metadata, packageId);
+             // }
+           }
+           $('.package-' + packageId).html(output);
+           if(j<=config.packages.length){
+             j++;
+             getPackageItems(j);
+           }
+         });
+       }
+       function getPackage(i){
+       var packageId = config.packages[i];
+       if(packageId === undefined){
+        return;
+       }
+
+       // take package title
+
+       // $.ajax({
+       //  url: 'https://services.inplayer.com/items/packages/' + packageId,
+       //  success: function(resp){
+       //    var package_title = resp.title;
+       //    $('.package-title-'+packageId).html(package_title);
+       //    if(i<=config.packages.length){
+       //      i++;
+       //      getPackage(i);
+       //    }
+       //  }
+       // });
+
+       }
+       $(function(){
+       getPackage(0);
+       getPackageItems(0);
+       })
+
+
+
+    </script>
+  </body>
+</html>
